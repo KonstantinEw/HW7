@@ -77,6 +77,35 @@ function sumFibon() {
     //7
 
 
+// let str = 'This website is for losers LOL!';
 
+// let secondStr = str.replace(/[aeiou]/gi, '');
+
+// let switchStr = (str) => secondStr;
+
+
+//8
+
+// accum("abcd") -> "A-Bb-Ccc-Dddd"
+// accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+// accum("cwAt") -> "C-Ww-Aaa-Tttt"
+
+
+// не работает
+
+// function capitalizeFirstLetter(s) {
+//     return s.charAt(0).toUpperCase() + s.slice(1);
+// }
+
+// function accum(str) {
+//     str.split('')
+//     .map((word, i) => capitalizeFirstLetter(Array(i + 2).join(word).toLowerCase()))
+//     .join('-');
+// }
+
+
+// console.log(accum('abcd'));    
+// console.log(accum('RqaEzty')); 
+// console.log(accum('cwAt')); 
 
 
