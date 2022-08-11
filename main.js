@@ -6,22 +6,23 @@
 //     console.log(item);
 // })
 
-function printFibon() {
-    fibonacci.forEach(function (item) {
+function printFibon(item) {
         console.log(item);
-    });
-}
+    };
 
-// //2
+    fibonacci.forEach(printFibon);
+
+
+                         //2
 
 const users = ['Darya', 'Masha', 'Denis', 'Vitaliy', 'Polina', 'Anton']
 
 
-function userNumber() {
-    let num = users.map((item, index) => {
-    return 'Member '+(index+1)+':'+' '+item});
-    console.log(num);
+function userNumber(item,index) {
+    console.log('Member '+(index+1)+':'+' '+item);
 };
+
+
 
 
 
@@ -29,22 +30,22 @@ function userNumber() {
 //     return 'Member '+(index+1)+':'+' '+item;
 // })
 
-// //3
+             //3
 
 const number = [7, -4, 32, -90, 54, 32, -21]
 
 
-// let positiveNum = numbers.filter(function(item){
-//     return item >= 0;
-// })
+
 
 // let positNum = numbers.filter(item => item >=0);
 
-function getPositiveNum() {
-    return number.filter(item => item >= 0);
+function getPositiveNum(num) {
+    if (num>=0) {
+        console.log(num)
+    }
 }
 
-//4
+                    //4
 
 let sum = fibonacci.reduce((a,b)=> a+b);
 
@@ -58,7 +59,7 @@ function sumFibon() {
 //     return a+b;
 // })
 
-//5
+                     //5
 
 
     // const numbers = [5, 9, 13, 24, 54, 10, 13, 99, 1, 5]
@@ -77,11 +78,11 @@ function sumFibon() {
     //7
 
 
-// let str = 'This website is for losers LOL!';
+let str = 'This website is for losers LOL!';
 
-// let secondStr = str.replace(/[aeiou]/gi, '');
+let secondStr = str.replace(/[aeiou]/gi, '');
 
-// let switchStr = (str) => secondStr;
+let switchStr = (str) => secondStr;
 
 
 //8
